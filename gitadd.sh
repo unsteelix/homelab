@@ -8,7 +8,6 @@ sudo git add jellyseerr/docker-compose.yml
 sudo git add memos/docker-compose.yml
 sudo git add nginx/docker-compose.yml
 sudo git add pihole/docker-compose.yml
-sudo git add portfolio/docker-compose.yml
 sudo git add prowlarr/docker-compose.yml
 sudo git add qbittorrent/docker-compose.yml
 sudo git add radarr/docker-compose.yml
