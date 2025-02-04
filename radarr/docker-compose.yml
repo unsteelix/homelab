@@ -1,0 +1,16 @@
+services:
+  radarr:
+    container_name: radarr
+    image: ghcr.io/hotio/radarr
+    ports:
+      - "7878:7878"
+    environment:
+      - PUID=1000
+      - PGID=1000
+      #- UMASK=002
+      - TZ=Etc/UTC
+    volumes:
+      - ./config:/config
+      - /mnt/SSD:/data
+    restart:
+      unless-stopped

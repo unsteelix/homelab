@@ -1,0 +1,16 @@
+version: '3'
+services:
+  samba:
+    image: dockurr/samba
+    container_name: samba
+    environment:
+      NAME: "NAS"
+      USER: "unsteelix"
+      PASS: ""
+    ports:
+      - 445:445
+    volumes:
+      - ./..:/storage/docker
+      - /mnt/SSD:/storage/SSD
+      #- /home/unsteelix/docker/samba/config/smb.conf:/etc/samba/smb.conf   # global config
+    restart: 'unless-stopped'
