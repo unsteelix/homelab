@@ -1,0 +1,19 @@
+services:
+    dumbdrop:
+        image: dumbwareio/dumbdrop:latest
+        container_name: dumbdrop
+        ports:
+            - 6400:3000
+        volumes:
+            # Where your uploaded files will land
+            - /mnt/SSD/downloads/complete:/app/uploads 
+        environment:
+            # The title shown in the web interface
+            DUMBDROP_TITLE: DumbDrop
+            # Maximum file size in MB
+            MAX_FILE_SIZE: 30000
+            # Optional PIN protection (leave empty to disable)
+            DUMBDROP_PIN: 123456
+            # Upload without clicking button
+            AUTO_UPLOAD: false
+        restart: unless-stopped

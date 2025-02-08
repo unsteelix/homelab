@@ -2,5 +2,6 @@ version: '3.3'
 services:
     cloudflared:
         image: 'cloudflare/cloudflared:latest'
-        command: 'tunnel --no-autoupdate run --token eyJhIjoiNDJkOTA4NWNlZWIzYTM1Mjc1NWYxOTU0OGMwNTliN2QiLCJ0IjoiNzI3NDg5YWEtMGExMC00NzUwLWJjZmUtNWU4MjUzNGQzNDJlIiwicyI6Ill6UTRZVGsyTm1RdE9URm1PUzAwTVdRMExXSmlOemN0TTJSak1UUTVaamc0T1RVeiJ9; cloudflared access tcp --hostname smb.unsteelix.cloud --url 192.168.8.100:8445'
+        container_name: cloudflared
+        command: 'tunnel --no-autoupdate run --token ${TOKEN}'
         restart: 'unless-stopped'
