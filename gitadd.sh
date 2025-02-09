@@ -8,4 +8,5 @@ do
     
 done
 
+sudo git add README.md
 sudo git add gitadd.sh
