@@ -2,10 +2,16 @@
 
 Configs and basic usage tips for personal Homelab.
 
+![Dashboard](dashboard.png)
+
 ## Purpose
 
 Move out from major IT tech giants like Apple, Google, MS and etc., and selfhost all needed services by myself and store all my data locally.  
 Use much better analog of Apple photos - Immich, Notion - Obsidian, Google Drive/iCloud Drive - Filebrowser/Samba and etc... 
+
+## Scheme
+
+![Scheme](homelab.drawio.png)
 
 ## Folder structure
 
